@@ -16,6 +16,15 @@ Javabuzz.prototype.isDivisibleByFifteen = function(number) {
   return this._isDivisibleBy(number, 15);
 };
 
-// prototype allows us to bind a method to a class. In the example above
-// we are binding Javabuzz class to our isDivisibleByThree method using
-// prototype.
+Javabuzz.prototype.says = function(number) {
+  if (this.isDivisibleByThree(number)) {
+    return "Java";
+  }
+  if (this.isDivisibleByFive(number)) {
+    return "Buzz";
+  }
+  if (this.isDivisibleByFifteen(number)) {
+     return "Javabuzz";
+  }
+  return number;
+};
