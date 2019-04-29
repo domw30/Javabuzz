@@ -9,8 +9,8 @@ describe('Javabuzz', function() {
       expect(javabuzz.isDivisibleByThree(3)).toBe(true);
     });
 
-    it('divisible by 15', function() {
-      expect(javabuzz.isDivisibleByFifteen(15)).toBe(true);
+    it('divisible by 5', function() {
+      expect(javabuzz.isDivisibleByFive(5)).toBe(true);
     });
 
     it('divisible by 15', function() {
@@ -42,7 +42,7 @@ describe('Javabuzz', function() {
     });
 
     it('"Javabuzz" when a number is divisible by 15', function() {
-      expect(javabuzz.says(15)).toEqual("Java");
+      expect(javabuzz.says(15)).toEqual("JavaBuzz");
     });
   });
 });
